@@ -1,4 +1,11 @@
-pipeline {
+#!groovy
+import java.nio.file.Files
+import java.nio.file.Path
+import java.nio.file.Paths
+import java.util.regex.*
+node
+
+ {
     stages {
         stage('Build') {
             steps {
