@@ -1,25 +1,21 @@
-#!groovy
-import java.nio.file.Files
-import java.nio.file.Path
-import java.nio.file.Paths
-import java.util.regex.*
+
 node
 
  {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                sh “echo Build”
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                sh "echo Test"
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                 sh "echo Deploy"
             }
         }
     }
