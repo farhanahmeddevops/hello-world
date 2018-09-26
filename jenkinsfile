@@ -5,17 +5,17 @@ node
      
         stage('Build') {
             
-                sh “echo Build”
+                 echo "Build"
             
         }
         stage('Test') {
             
-                sh "echo Test"
+                 echo "Test"
             
         }
         stage('Deploy') {
             
-                 sh "echo Deploy"
+                  echo "Deploy"
             
         }
     }
